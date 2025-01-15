@@ -1,0 +1,764 @@
+/* General Body Styling */
+body {
+    body {  
+    font-family: 'Roboto', sans-serif; /* Apply the font to the entire body */  
+}  
+
+.title {  
+    font-family: 'Roboto', sans-serif; /* Apply to title */  
+    font-size: 2.5rem; /* Adjust size as needed */  
+}  
+
+.tagline {  
+    font-family: 'Roboto', sans-serif; /* Apply to tagline */  
+    font-size: 1.5rem; /* Adjust size as needed */  
+}
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #f889ae, #2a5298); /* Dark blue gradient */
+    color: #ffffff;
+    overflow-x: hidden; /* Prevent horizontal scrolling */  
+}
+
+/* Header Styling */
+header {
+    background-color: #271b57;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #f7b2d9; /* Pinkish color */
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* Clock Section */
+#clock-section {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d784a8;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#clock {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #cb2877;
+    padding: 10px 0;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #f7b2d9;
+    border-radius: 5px;
+}
+
+/* Section Styling */
+section {  
+    padding: 20px; /* Space around sections */  
+    display: none; /* Hidden by default, managed by JavaScript */  
+    max-width: 100%; /* Prevent overflow on small screens */  
+    box-sizing: border-box; /* Include padding in width calculations */  
+}  
+
+/* Home Section Styling */
+#home {
+    display: block; /* Default visible section */
+    text-align: center;
+}
+
+#home img {  
+    width: 100%; /* Responsive image */  
+    max-width: 250px; /* Set a maximum width */  
+    height: auto; /* Maintain aspect ratio */  
+    border-radius: 50%;  
+    margin-bottom: 0;      /* Resets any unintended margins */  
+}  
+
+#home p {
+    font-family: elephan;
+    font-size: 1.2em;
+}
+
+/* Biodata Section Styling */
+#biodata h2 {
+    text-align: center; /* Centers the text */
+    font-size: 2rem; /* Adjust the size as desired */
+    margin-bottom: 20px; /* Adds some spacing below the title */
+    color: #b90148; /* Optional: Ensure the text color is visible on your background */
+}
+
+#biodata {
+    background-image: url('starr gif.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensure it covers the full height */  
+    width: 100%; /* Ensure it uses full width without overflow */  
+    position: relative; 
+    padding-bottom: 100px; /* Add padding here */
+  
+}
+
+#biodata::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(223, 228, 255, 0.434); /* Dark overlay */
+    z-index: 1; /* Ensure it appears above the background */
+}
+
+#biodata * {
+    position: relative; /* Keep content above the overlay */
+    z-index: 2;
+}
+
+#biodata p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+/* Biodata Section Table Styling */
+.accordion {  
+    width: 90%; /* Use more responsive width */  
+    max-width: 800px; /* Maintain a maximum width */  
+    margin: 20px auto; /* Center it */  
+    border: 1px solid #ddd;  
+    border-radius: 5px;  
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);  
+    background-color: #ffffff;  
+    overflow: hidden;  
+}  
+
+.accordion-item {
+    border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+    width: 100%;
+    background-color: #1e3c72;
+    color: #ffffff;
+    padding: 10px 15px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+    background-color: #a11e55;
+}
+
+.accordion-content {
+    display: none; /* Hidden by default */
+    padding: 10px 15px;
+    background-color: #f7f7f7;
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+
+    .dropdown-image {  
+        width: 200px; /* Change this value to set your desired width */  
+        height: 150px; /* Maintains aspect ratio */  
+    }
+}
+
+   /* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown text */
+  .dropdown-text {
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  /* Style for the dropdown container */
+.dropdown {
+    display: inline-block;
+    margin: 20px; /* Adds a consistent gap between each icon */
+    position: relative;
+    text-align: center;
+}
+
+/* Style for the icons */
+.dropdown-text img {
+    width: 80px; /* Increase the size of the icon */
+    height: 80px;
+    border-radius: 50%; /* Circular shape */
+    border: 3px solid #fff; /* Thicker white border */
+    background-color: #f0f0f0; /* Light background color */
+    padding: 10px; /* Add spacing inside the circle */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+    transition: transform 0.3s ease;
+}
+  
+  /* Image inside dropdown */
+  .dropdown-content img {
+    width: 500px;
+    height: 200;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* New styles for text and image layout in accordion */
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.info-text {
+    flex: 1;
+    max-width: 60%;
+    color: #333;
+}
+
+.info-image img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.accordion-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.accordion-header.active + .accordion-content {
+    display: block; /* Shows the content when active */
+}
+
+
+/* Education Timeline Styling */
+#education h2 {
+    text-align: center; /* Centers the text */
+    font-size: 2rem; /* Adjust the size as desired */
+    margin-bottom: 20px; /* Adds some spacing below the title */
+    color: #ffd4e3; /* Optional: Ensure the text color is visible on your background */
+}
+/* Logo Styling */
+.institution-logo {
+    width: 60px; /* Fixed width */
+    height: 60px; /* Fixed height */
+    object-fit: contain; /* Ensures the image fits within the box without distortion */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    border: 2px solid #1e3c72;
+    transition: border 0.3s ease;
+}
+
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    border-left: 2px solid #1e3c72;
+    max-width: 600px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -10px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #1e3c72;
+    border-radius: 50%;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    border-left: 4px solid #1e3c72; /* Border line for the timeline */
+}
+
+/* Timeline Items */
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 20px; /* Space for the timeline border */
+}
+
+/* Border Circle at Each Point */
+.timeline-border {
+    position: absolute;
+    top: 0;
+    left: -8px; /* Align the circle with the border line */
+    width: 16px;
+    height: 16px;
+    background-color: #1e3c72;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Heading and Text Styling */
+.timeline-item h3 {
+    margin: 0;
+    color: #1e3c72;
+    font-size: 1.5rem;
+}
+
+.timeline-item p {
+    margin: 5px 0 0;
+    color: #333;
+    font-size: 1rem;
+    background: #f7f7f7; /* Add background for the text */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd; /* Border for the text box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover Effect for Timeline */
+.timeline-item:hover .timeline-border {
+    background-color: #cb2877;
+    transition: 0.3s ease;
+}
+
+.timeline-item:hover p {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
+
+/* Ensure spacing for the education section */
+#education {
+    padding-bottom: 100px; /* Adds space inside the section */
+    margin-bottom: 0;      /* Resets any unintended margins */
+    min-height: calc(100vh - 150px); /* Adjust for viewport height minus header/footer heights */
+  }  
+
+/* Gallery Section with CSS Dropdown */
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.gallery .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.gallery .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Title Styling for All Sections */
+#experience h2, #family h2, #gallery h2 {
+    text-align: center;
+    font-size: 2.0rem;
+    color: #851d37;
+    margin-bottom: 20px;
+}
+
+/*Table Section */
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #96D4D4;
+  }
+
+/* Styling for Experience Section Table */
+#experience table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+#experience th, #experience td {
+    border: 1px solid rgb(200, 200, 200);
+    padding: 10px;
+    text-align: left;
+    vertical-align: top; /* Ensures text and images align properly */
+}
+
+#experience th {
+    background-color: rgb(46, 30, 99);
+    color: rgb(255, 255, 255);
+}
+
+#experience td {
+    background-color: rgb(255, 231, 235);
+    color: rgb(50, 50, 50);
+}
+
+/* Ensure spacing for the experience section */
+#experience {
+    padding-bottom: 100px; /* Adds space inside the section */
+    margin-bottom: 0;      /* Resets any unintended margins */
+    min-height: calc(100vh - 150px); /* Adjust for viewport height minus header/footer heights */
+  }  
+
+/* Family Section */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#family {
+    background-image: url('cloud\ gif.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh; /* Ensure it covers the full height */  
+    width: 100%; /* Ensure it uses full width without overflow */  
+    position: relative; 
+    padding-bottom: 100px; /* Add padding here */
+  
+}
+
+#family::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(223, 228, 255, 0.434); /* Dark overlay */
+    z-index: 1; /* Ensure it appears above the background */
+}
+
+#family * {
+    position: relative; /* Keep content above the overlay */
+    z-index: 2;
+}
+
+#family {
+    padding: 50px 20px;
+    background-color: #f8f3e8;
+    text-align: center;
+    min-height: 100vh; /* Ensure the section takes full viewport height */
+    margin-bottom: 50px; /* Adds extra space below the family section */
+}
+
+footer {
+    position: relative; /* Ensure footer doesn't overlap */
+    padding: 20px;
+    background-color: #271b57;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.family-album {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.family-member {
+    position: relative;
+    text-align: center;
+    background: rgb(222, 130, 166);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    overflow: hidden;
+}
+
+.family-member:hover {
+    transform: scale(1.05);
+}
+
+.family-member img {
+    width: 200px;
+    height: px;
+    border-radius: 0%;
+    margin-bottom: 10px;
+}
+
+.family-member:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.dropdown img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+/* Remove scrolling gap and ensure proper section spacing */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#family {
+    padding: 50px 20px;
+    background-color: #f8f3e8;
+    text-align: center;
+}
+
+footer {
+    position: relative; /* Prevent footer from sticking if not necessary */
+    padding: 20px;
+    background-color: #271b57;
+    color: #ffffff;
+    text-align: center;
+    font-size: 0.9em;
+    width: 100%;
+}
+
+/* Gallery Section */
+#gallery {
+    padding:px 20px;
+    text-align: center;
+    background-color: rgba(right, #f889ae, #2a5298);
+}
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-slides {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    min-width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.slide.active {
+    display: flex;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.thumbnails img {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+button.prev,
+button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.684);
+    color: #020000;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer contact styling */
+footer p {
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+}
+
+footer a {
+    color: #f7b2d9;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #ffd4e3;
+}
+
+/* Icon styling */
+.footer-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.footer-icon img:hover {
+    transform: scale(1.2); /* Enlarge slightly on hover */
+}
+
+
+/* Footer Fix */
+footer {
+    z-index: 3; /* Ensure footer stays above all content */
+    position: relative; /* Reset stacking context for the footer */
+    width: 100%; /* Full-width footer */  
+    bottom: 0; /* Stick to bottom if necessary */  
+}
+
+/* Footer Styling */
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+    background-color: #271b57;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 0.9em;
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: space-between; /* Align left and right sections */
+    align-items: center;
+    padding: 20px 50px; /* Add padding for space from the sides */
+    background-color: #271b57; /* Dark background */
+    color: #ffffff; /* White text color */
+    font-family: Arial, sans-serif;
+    font-size: 0.9em;
+    width: 100%;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Footer Left Section */
+.footer-left {
+    text-align: left;
+}
+
+/* Footer Right Section */
+.footer-right a {
+    color: #ffffff;
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 5px; /* Add small spacing between links */
+    transition: color 0.2s ease;
+}
+
+.footer-right a:hover {
+    color: #f1c40f; /* Change color on hover */
+}
